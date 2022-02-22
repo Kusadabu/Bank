@@ -114,8 +114,7 @@ document.getElementById("Mur").href=uri
   .then(() => {
  if (!liff.isLoggedIn()) {
  liff.login();
- }).then({
- documen.getElementById(`name`).value=liff.getAccesstoken();
+ }).then({ documen.getElementById(`name`).value=liff.getAccesstoken();
  document.getElementById('send').addEventListener('click', send);
 }).catch((error) => {
  document.getElementById('error').innerText = 'Error from LIFF: ' + error;
@@ -124,7 +123,6 @@ document.getElementById("Mur").href=uri
 
 
 function toOther(){
- alert("test")
 var src=document.getElementById("demopic").src
 var text=document.getElementById("name").value+"匯款了一筆金額給您";
 document.getElementById("BM").innerText=text
