@@ -114,7 +114,7 @@ document.getElementById("Mur").href=uri
  if (!liff.isLoggedIn()) {
  liff.login();
  }).then({
- documen.getElementById(`name`).value=liff.getProfile.name;
+ documen.getElementById(`name`).value=liff.getAccesstoken();
  document.getElementById('send').addEventListener('click', send);
 }).catch((error) => {
  document.getElementById('error').innerText = 'Error from LIFF: ' + error;
