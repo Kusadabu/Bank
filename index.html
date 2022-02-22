@@ -52,7 +52,7 @@ div.img{width: 30%}
 <head>
 　<meta charset="utf8">
 　<meta name="viewport" content="width=device-width,initial-scale=1">
-　<title>分享給朋友testtest</title>
+　<title>分享給朋友</title>
 </head>
 <body >
 <div id="div">
@@ -114,7 +114,7 @@ document.getElementById("Mur").href=uri
  if (!liff.isLoggedIn()) {
  liff.login();
  }).then({
- 
+ documen.getElementById(`name`).value=liff.getProfile.name;
  document.getElementById('send').addEventListener('click', send);
 }).catch((error) => {
  document.getElementById('error').innerText = 'Error from LIFF: ' + error;
